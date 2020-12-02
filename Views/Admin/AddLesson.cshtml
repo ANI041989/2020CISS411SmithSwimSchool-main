@@ -1,0 +1,14 @@
+﻿@model Project1.Models.Lesson
+<form asp-controller="Instructor" asp-action="AddCourse"
+      method="post">
+    <input asp-for="LessonId" type="hidden" />
+    <br />
+    <label asp-for="SkillLevel"></label>
+    <input asp-for="SkillLevel" />
+    <br />
+    <label asp-for="Tuition"></label>
+    <input asp-for="Tuition" />
+    <br />
+    <button type="submit">Add Lesson</button>
+    <a asp-action="Index">Cancel</a>
+</form>

@@ -1,0 +1,10 @@
+﻿@model Project1.Models.Swimmer
+<h2>Add Your Profile</h2>
+<form asp-action="AddProfile">
+    <input asp-for="@Model.UserId" type="hidden" />
+    <label asp-for="SwimmerName"></label>
+    <input asp-for="SwimmerName" />
+    <br />
+    <button type="submit">Add Profile</button>
+</form>
+<p><a asp-action="SwimmerHome">Back to Swimmer Home</a></p>
